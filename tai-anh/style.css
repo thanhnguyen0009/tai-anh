@@ -557,11 +557,11 @@ strong{
 }
 
 .add{
-    font-size: 10px;
+    font-size: .7em;
     text-transform: uppercase;
 }
 .wp{
-    font-size: 1em;
+    font-size: 1.1em;
     font-weight: 600;
     text-transform: uppercase;
 }
@@ -570,7 +570,7 @@ strong{
     display: flex;
     justify-content: center;
     font-family: 'university Roman';
-    font-size: 2em;
+    font-size: 2.3em;
     margin-top: 100px;
     color: var(--primary-color);
 }
@@ -595,7 +595,7 @@ strong{
 
 
 .img-timeline{
-    width: 70%;
+    width: 80%;
 }
 
 
