@@ -271,6 +271,17 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'University Roman';
+    src: url('./font/UniversityRomanBT-Bold.woff2') format('woff2'),
+        url('./font/UniversityRomanBT-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
 :root{
     --primary-color: #276F8E;
 }
@@ -437,10 +448,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url(./anh/1.jpg);
+    /* background-image: url(./anh/1.jpg);
     background-size: cover;
-    background-position: center;
-    height: 700px;
+    background-position: center; */
+    /* height: 700px; */
     
 }
 
@@ -452,10 +463,10 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-top: 600px;
-    color: #fff;
+    color: var(--primary-color);
     font-family: '1FTV Blushing Rose';
     line-height: 35px;
+    margin-top: 30px;
 }
 
 .inv{
@@ -467,7 +478,7 @@
 }
 
 .second{
-    padding-top: 200px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -486,7 +497,7 @@
 
 .box-third{
     /* height: 900px; */
-    background-color: var(--primary-color);
+    background-color: #111;
 }
 
 .third{
@@ -557,18 +568,16 @@ strong{
 
 .time-dt{
     display: flex;
-    justify-content: flex-end;
-    font-family: 'SVN-Aaron Script';
-    font-size: 2.5em;
-    margin-right: 20px;
+    justify-content: center;
+    font-family: 'university Roman';
+    font-size: 2em;
     margin-top: 100px;
     color: var(--primary-color);
 }
 
 .box-timeline{
     display: flex;
-    justify-content: flex-end;
-    margin-right: 10px;
+    justify-content:center;
     margin-top: 20px;
     margin-bottom: 150px;
 }
@@ -586,7 +595,7 @@ strong{
 
 
 .img-timeline{
-    width: 80%;
+    width: 70%;
 }
 
 
@@ -673,7 +682,7 @@ strong{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: -150px;
+    margin-top: -250px;
     
 }
 
@@ -807,7 +816,7 @@ border-radius: 20px;
   width: 90px;
   text-align: center;
 display: inline-block;
-border: 1px solid #979796;
+border: 1px solid var(--primary-color);
 padding: 5px 10px;
 margin: 5px 20px;
 border-radius: 20px;
@@ -879,9 +888,8 @@ border-radius: 20px;
 }
 
 .box-end .time-end {
-    font-family: 'SVN-Aaron Script';
     color: #fff;  
-    font-size: 50px;
+    
     position: absolute; 
     top: 25%; 
     left: 50%;
@@ -889,6 +897,13 @@ border-radius: 20px;
     writing-mode: vertical-rl;
     text-orientation: mixed;
     z-index: 1;
+}
+
+.time-end{
+    padding-left: 300px;
+    letter-spacing: 5px;
+    font-size: 2.5em;
+    font-family: 'university Roman';
 }
 
 .box-end::before {
@@ -956,8 +971,10 @@ border-radius: 20px;
     }
     .qr-item{
     padding: 0 30px;
-
-}
+    }
+    .box-end{
+        height: 85vh;
+    }
 }
 
 
